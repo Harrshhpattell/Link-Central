@@ -48,6 +48,7 @@
 
         #me{
             border-radius: 50%;
+            width: 150px;
         }
         .btnsec{
             background-color: #DFE7ED;
