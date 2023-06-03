@@ -112,6 +112,11 @@
             display: none;
         }
 
+        @media (max-width:500px){
+            section{
+                margin: 0;
+            }
+        }
     </style>
 </head>
 <body>
@@ -147,15 +152,20 @@
                     <div class="btn-logo" style="color: #DF2C62;" ><i class="fa-brands fa-square-instagram fa-2xl"></i></div>
                     <div class="btn-name"><h3>Instagram</h3></div>
                 </div>
+                <br>
+                <hr>
+                <br>
+                <footer>
+                    <p>&copy; 2023 Harsh Patel. All rights reserved.</p>
+                </footer>
         </div>
-
     </section>
 </body>
 </html>
 <script>
     function redirectWithDelay(url) {
         setTimeout(function() {
-            window.location.href = url;
+             window.open(url, "_blank");
         }, 2000);
     }
 </script>
