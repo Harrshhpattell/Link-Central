@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla&family=Roboto+Slab&display=swap');
+        *{
+            margin: 0;
+            padding: 0%;
+            box-sizing: border-box;
+            font-size: 16px;
+        }
+        body{
+            background-image: linear-gradient(to right, #8294C4,#ACB1D6,#DBDFEA,#AEE2FF,#8294C4);
+            background-size: 600%;
+            background-position: 0 0;
+            height: 100vh;
+            /* Animation */
+            animation-duration: 20s;
+            animation-iteration-count: infinite;
+            animation-name: gradients;
+        }
+        @keyframes gradients {
+            0%   {background-position: 0 0;}
+            25% {background-position: 50% 0;}
+            50% {background-position: 90% 0;}
+            60% {background-position: 60%;}
+            75% {background-position: 40%;}
+            100%  {background-position: 0 0;}
+        }
+        section{
+            width: 500px;
+            margin: auto;
+            box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+            border-radius: 2px;
+            border-radius: 5px;
+            /* background-color: #F1F5F5; */
+            background-color: transparent;
+            text-align: center;
+            
+        }
+        h1{
+            font-family: 'Karla', sans-serif;
+            font-style: italic;
+            color: #163046;
+            font-size: 2.5rem;
+            letter-spacing: 1px;
+        }
+        
+        p{
+            color:#000;
+        }
+
+        #me{
+            border-radius: 50%;
+        }
+        .btnsec{
+            background-color: #DFE7ED;
+            position: relative;
+            top: -1rem;
+            padding:5% 20%; 
+        }
+
+        .btnsec a{
+            text-decoration: none;
+        }
+
+        .btn{
+            background-color: #CCD9E4;
+            border-radius: 10px;
+            display: flex;
+            margin:10% 0;
+            border: none;
+            box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+            transition: box-shadow 0.3s ease;
+        }
+
+        .btn-logo{
+            width: 30%;
+            background-color: #c0cbd5;
+            border-radius: 10px 20px 20px 10px;
+            transition: all 0.5s;
+        }
+
+        .btn-name{
+            margin: auto;
+            font-family: 'Karla', sans-serif;
+        }
+
+        .btn-logo,
+        .btn-name{
+            color: #163046;
+            padding: 20px;
+        }
+
+        .btn:hover{
+            box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .btn:hover > .btn-logo{
+            background-color: #D7E1E9;
+            width: 100%;
+            border-radius: 10px;
+            color: #CCD9E4;
+        }
+        .btn:hover > .btn-name{
+            display: none;
+        }
+
+        @media (max-width:500px){
+            section{
+                margin: 0;
+                width: 100%;
+                overflow-x: hidden;
+            }
+        }
